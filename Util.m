@@ -9,21 +9,6 @@
 
 @implementation Util
 
-/** Retorna a quantidade de linhas em um UITextView */
-+ (int) qtdLinhasTextView:(UITextView *) _textView {
-    
-    NSLayoutManager *layoutManager = [_textView layoutManager];
-    unsigned numberOfLines, index, numberOfGlyphs = (int)[layoutManager numberOfGlyphs];
-    NSRange lineRange;
-    for (numberOfLines = 0, index = 0; index < numberOfGlyphs; numberOfLines++){
-        (void) [layoutManager lineFragmentRectForGlyphAtIndex:index
-                                               effectiveRange:&lineRange];
-        index = (int)NSMaxRange(lineRange);
-    }
-    
-    return numberOfLines;
-}
-
 /** This method return a UIView First Responder of recursive form */
 + (UIView *) findFirstResponder:(UIView *) _view {
     
