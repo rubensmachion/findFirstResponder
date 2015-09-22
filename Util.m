@@ -1,6 +1,5 @@
 //
 //  Util.m
-//  ProjetoBar2Me
 //
 //  Created by Rubens Machion on 6/22/15.
 //  Copyright (c) 2015 Rubens Machion. All rights reserved.
